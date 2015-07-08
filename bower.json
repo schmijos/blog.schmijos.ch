@@ -1,0 +1,8 @@
+{
+  "name": "blog.schmijos.ch",
+  "version": "0.1.0",
+  "description": "A small blog",
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
