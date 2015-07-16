@@ -19,7 +19,7 @@ gulp.task('watch', function () {
   gulp.watch(['./src/**/*.html'], ['build', 'reload']);
 });
 
-gulp.task('build_index', function () {
+gulp.task('build_index_content', function () {
   var sources = gulp.src(['./.tmp/articles/*.html']);
   var target = gulp.src('./.tmp/index.html');
   var options = {
@@ -30,7 +30,21 @@ gulp.task('build_index', function () {
   };
 
   return target.pipe(inject(sources, options))
-               .pipe(gulp.dest('./dist/'));
+               .pipe(gulp.dest('./.tmp/'));
+});
+
+gulp.task('build_index_links', function () {
+    var sources = gulp.src(['./.tmp/articles/*.html']);
+    var target = gulp.src('./.tmp/index.html');
+    var options = {
+        starttag: '<!-- inject:article_links -->',
+        transform: function (filePath, file) {
+            return '<li>'+filePath.toString('utf8')+'</li>'
+        }
+    };
+
+    return target.pipe(inject(sources, options))
+        .pipe(gulp.dest('./.tmp/'));
 });
 
 gulp.task('markdown', function () {
@@ -44,5 +58,11 @@ gulp.task('html', function () {
     .pipe(gulp.dest('./.tmp'));
 });
 
-gulp.task('build', ['html', 'markdown', 'build_index']);
+gulp.task('copy_dist', function() {
+  gulp.src(['./.tmp/**/*.html'])
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('build_index', ['build_index_content', 'build_index_links']);
+gulp.task('build', ['html', 'markdown', 'build_index', 'copy_dist']);
 gulp.task('default', ['connect', 'watch']);

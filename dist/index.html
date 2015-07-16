@@ -6,17 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <h1>Blog</h1>
-    <p>Some Content:</p>
 
-    <!-- inject:articles:html -->
-    <h2 id="blub">blub</h2>
-    
-    <h2 id="second-article">Second Article</h2>
-    
-    <h2 id="this-is-more-content-">This is more Content!</h2>
-    
-    <!-- endinject -->
+    <header>
+        <h1>Blog</h1>
+    </header>
+
+    <aside>
+        <h1>Index:</h1>
+        <ul>
+            <!-- inject:article_links -->
+            <li>/.tmp/articles/20150708-160600-why-so-angry.html</li>
+            <li>/.tmp/articles/20150708-160634-not-again.html</li>
+            <li>/.tmp/articles/20150708-160635-why-again.html</li>
+            <!-- endinject -->
+        </ul>
+    </aside>
+
+    <section>
+        <!-- inject:articles:html -->
+        <h2 id="blub">blub</h2>
+        
+        <h2 id="second-article">Second Article</h2>
+        
+        <h2 id="this-is-more-content-">This is more Content!</h2>
+        
+        <!-- endinject -->
+    </section>
 
     <span>And some footer</span>
 </body>

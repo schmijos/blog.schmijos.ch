@@ -7,11 +7,22 @@
 </head>
 <body>
 
-    <h1>Blog</h1>
-    <p>Some Content:</p>
+    <header>
+        <h1>Blog</h1>
+    </header>
 
-    <!-- inject:articles:html -->
-    <!-- endinject -->
+    <aside>
+        <h1>Index:</h1>
+        <ul>
+            <!-- inject:article_links -->
+            <!-- endinject -->
+        </ul>
+    </aside>
+
+    <section>
+        <!-- inject:articles:html -->
+        <!-- endinject -->
+    </section>
 
     <span>And some footer</span>
 </body>
