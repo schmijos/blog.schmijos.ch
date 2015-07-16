@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var connect = require('gulp-connect');
 var inject = require('gulp-inject');
+var markdown = require('gulp-markdown');
 
 gulp.task('connect', function() {
   connect.server({
@@ -8,19 +9,19 @@ gulp.task('connect', function() {
     livereload: true
   });
 });
- 
-gulp.task('html', function () {
-  gulp.src('./dist/*.html')
+
+gulp.task('reload', function () {
+  gulp.src(['./dist/*.html'])
     .pipe(connect.reload());
 });
  
 gulp.task('watch', function () {
-  gulp.watch(['./src/**/*.html'], ['build', 'html']);
+  gulp.watch(['./src/**/*.html'], ['build', 'reload']);
 });
 
-gulp.task('build', function () {
-  var sources = gulp.src(['./src/articles/*.html']);
-  var target = gulp.src('./src/index.html');
+gulp.task('build_index', function () {
+  var sources = gulp.src(['./.tmp/articles/*.html']);
+  var target = gulp.src('./.tmp/index.html');
   var options = {
     starttag: '<!-- inject:articles:{{ext}} -->',
     transform: function (filePath, file) {
@@ -31,5 +32,17 @@ gulp.task('build', function () {
   return target.pipe(inject(sources, options))
                .pipe(gulp.dest('./dist/'));
 });
- 
+
+gulp.task('markdown', function () {
+  gulp.src(['./src/articles/*.md'])
+    .pipe(markdown())
+    .pipe(gulp.dest('./.tmp/articles'));
+});
+
+gulp.task('html', function () {
+  gulp.src(['./src/**/*.html'])
+    .pipe(gulp.dest('./.tmp'));
+});
+
+gulp.task('build', ['html', 'markdown', 'build_index']);
 gulp.task('default', ['connect', 'watch']);
