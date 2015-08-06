@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var del = require('del');
 var connect = require('gulp-connect');
 var inject = require('gulp-inject');
 var markdown = require('gulp-markdown');
@@ -19,7 +20,7 @@ gulp.task('watch', function () {
   gulp.watch(['./src/**/*.html'], ['build', 'reload']);
 });
 
-gulp.task('build_index_content', function () {
+gulp.task('build_index_content', ['precompile'], function () {
   var sources = gulp.src(['./.tmp/articles/*.html']);
   var target = gulp.src('./.tmp/index.html');
   var options = {
@@ -33,7 +34,7 @@ gulp.task('build_index_content', function () {
                .pipe(gulp.dest('./.tmp/'));
 });
 
-gulp.task('build_index_links', function () {
+gulp.task('build_index_links', ['precompile', 'build_index_content'], function () {
     var sources = gulp.src(['./.tmp/articles/*.html']);
     var target = gulp.src('./.tmp/index.html');
     var options = {
@@ -48,21 +49,28 @@ gulp.task('build_index_links', function () {
 });
 
 gulp.task('markdown', function () {
-  gulp.src(['./src/articles/*.md'])
+  return gulp.src(['./src/articles/*.md'])
     .pipe(markdown())
     .pipe(gulp.dest('./.tmp/articles'));
 });
 
 gulp.task('html', function () {
-  gulp.src(['./src/**/*.html'])
+  return gulp.src(['./src/**/*.html'])
     .pipe(gulp.dest('./.tmp'));
 });
 
-gulp.task('copy_dist', function() {
-  gulp.src(['./.tmp/**/*.html'])
-    .pipe(gulp.dest('./dist'));
+gulp.task('copy_dist', ['clean:dist'], function() {
+  gulp.src(['./.tmp/**/*.html']).pipe(gulp.dest('./dist'));
+  return gulp.src(['./bower_components/**/dist/**/*.*'], {
+      base: './'
+  }).pipe(gulp.dest('./dist'));
 });
 
+gulp.task('clean:dist', function(cb) { del(['dist'], cb); });
+gulp.task('clean:tmp', function(cb) { del(['.tmp'], cb); });
+gulp.task('clean', ['clean:tmp', 'clean:dist']);
+
 gulp.task('build_index', ['build_index_content', 'build_index_links']);
-gulp.task('build', ['html', 'markdown', 'build_index', 'copy_dist']);
+gulp.task('precompile', ['html', 'markdown']);
+gulp.task('build', ['build_index'], function() { gulp.start('copy_dist'); });
 gulp.task('default', ['connect', 'watch']);
