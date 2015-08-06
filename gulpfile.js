@@ -17,9 +17,9 @@ gulp.task('reload', function () {
   gulp.src(['./dist/*.html'])
     .pipe(connect.reload());
 });
- 
+
 gulp.task('watch', function () {
-  gulp.watch(['./src/**/*.html'], ['build', 'reload']);
+  gulp.watch(['./src/**/*.html', './src/**/*.md'], ['build', 'reload']);
 });
 
 gulp.task('clean:dist', function(cb) { del(['dist'], cb); });
