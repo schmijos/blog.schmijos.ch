@@ -4,26 +4,36 @@
     <meta charset="utf-8">
     <title>schmijos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>Blog</h1>
+  <div class="container">
+
+    <header class="row">
+      <h1>Blog</h1>
     </header>
 
-    <aside>
-        <h1>Index:</h1>
-        <ul>
-            <!-- inject:article_links -->
-            <!-- endinject -->
-        </ul>
-    </aside>
-
-    <section>
+    <div class="row">
+      <section class="col-md-8">
         <!-- inject:articles:html -->
         <!-- endinject -->
-    </section>
+      </section>
 
-    <span>And some footer</span>
+      <aside class="col-md-4">
+        <h1>Index:</h1>
+        <ul>
+          <!-- inject:article_links -->
+          <!-- endinject -->
+        </ul>
+      </aside>
+    </div>
+
+    <footer class="row">
+      <span>And some footer</span>
+    </footer>
+
+  </div>
 </body>
 </html>
