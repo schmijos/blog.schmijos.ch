@@ -4,6 +4,8 @@ var connect = require('gulp-connect');
 var inject = require('gulp-inject');
 var markdown = require('gulp-markdown');
 
+gulp.task('default', ['connect', 'watch']);
+
 gulp.task('connect', function() {
   connect.server({
     root: 'dist',
@@ -20,7 +22,30 @@ gulp.task('watch', function () {
   gulp.watch(['./src/**/*.html'], ['build', 'reload']);
 });
 
-gulp.task('build_index_content', ['precompile'], function () {
+gulp.task('clean:dist', function(cb) { del(['dist'], cb); });
+gulp.task('clean:tmp', function(cb) { del(['.tmp'], cb); });
+gulp.task('clean', ['clean:tmp', 'clean:dist']);
+
+/* PRECOMPILATION - copying into .tmp/ */
+gulp.task('precompile:prepare', ['clean:tmp']);
+
+gulp.task('html', ['precompile:prepare'], function () {
+    return gulp.src(['./src/**/*.html'])
+        .pipe(gulp.dest('./.tmp'));
+});
+
+gulp.task('markdown', ['precompile:prepare'], function () {
+    return gulp.src(['./src/articles/*.md'])
+        .pipe(markdown())
+        .pipe(gulp.dest('./.tmp/articles'));
+});
+
+gulp.task('precompile', ['html', 'markdown']);
+
+
+/* COMPILATION - operating in .tmp/ */
+
+gulp.task('inject_index_content', ['precompile'], function () {
   var sources = gulp.src(['./.tmp/articles/*.html']);
   var target = gulp.src('./.tmp/index.html');
   var options = {
@@ -34,7 +59,7 @@ gulp.task('build_index_content', ['precompile'], function () {
                .pipe(gulp.dest('./.tmp/'));
 });
 
-gulp.task('build_index_links', ['precompile', 'build_index_content'], function () {
+gulp.task('inject_index_links', ['inject_index_content'], function () {
     var sources = gulp.src(['./.tmp/articles/*.html']);
     var target = gulp.src('./.tmp/index.html');
     var options = {
@@ -48,16 +73,9 @@ gulp.task('build_index_links', ['precompile', 'build_index_content'], function (
         .pipe(gulp.dest('./.tmp/'));
 });
 
-gulp.task('markdown', function () {
-  return gulp.src(['./src/articles/*.md'])
-    .pipe(markdown())
-    .pipe(gulp.dest('./.tmp/articles'));
-});
+gulp.task('build_index', ['inject_index_content', 'inject_index_links']);
 
-gulp.task('html', function () {
-  return gulp.src(['./src/**/*.html'])
-    .pipe(gulp.dest('./.tmp'));
-});
+/* BUILDING - copying into dist/ */
 
 gulp.task('copy_dist', ['clean:dist'], function() {
   gulp.src(['./.tmp/**/*.html']).pipe(gulp.dest('./dist'));
@@ -66,11 +84,7 @@ gulp.task('copy_dist', ['clean:dist'], function() {
   }).pipe(gulp.dest('./dist'));
 });
 
-gulp.task('clean:dist', function(cb) { del(['dist'], cb); });
-gulp.task('clean:tmp', function(cb) { del(['.tmp'], cb); });
-gulp.task('clean', ['clean:tmp', 'clean:dist']);
 
-gulp.task('build_index', ['build_index_content', 'build_index_links']);
-gulp.task('precompile', ['html', 'markdown']);
-gulp.task('build', ['build_index'], function() { gulp.start('copy_dist'); });
-gulp.task('default', ['connect', 'watch']);
+gulp.task('build', ['build_index'], function() {
+  gulp.start('copy_dist');
+});
