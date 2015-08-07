@@ -1,5 +1,6 @@
-var gulp = require('gulp');
 var del = require('del');
+var fs = require('fs');
+var gulp = require('gulp');
 var connect = require('gulp-connect');
 var inject = require('gulp-inject');
 var markdown = require('gulp-markdown');
@@ -46,10 +47,12 @@ gulp.task('precompile', ['html', 'markdown']);
 /* COMPILATION - operating in .tmp/ */
 
 gulp.task('inject_index_content', ['precompile'], function () {
-  var sources = gulp.src(['./.tmp/articles/*.html']);
+  var articles = fs.readdirSync('./.tmp/articles/');
+  var newest_article = articles[articles.length - 1];
+  var sources = gulp.src('./.tmp/articles/' + newest_article);
   var target = gulp.src('./.tmp/index.html');
   var options = {
-    starttag: '<!-- inject:articles:{{ext}} -->',
+    starttag: '<!-- inject:article_content -->',
     transform: function (filePath, file) {
       return file.contents.toString('utf8')
     }
