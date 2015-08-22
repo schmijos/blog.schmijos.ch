@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= @item[:title] %></title>
+    <link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+    <div id="main">
+      <%= yield %>
+    </div>
+    <div id="sidebar">
+      <h2>Page</h2>
+      <ul>
+        <li><a href="/">Main</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+      <h2>Articles</h2>
+      <ul>
+        <% sorted_articles.each do |post| %>
+        <li><%= link_to post[:title], post.path %></li>
+        <% end %>
+      </ul>
+    </div>
+  </body>
+</html>

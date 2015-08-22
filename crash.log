@@ -1,0 +1,168 @@
+Crashlog created at 2015-08-22 16:25:32 +0200
+
+===== MESSAGE:
+
+Kramdown::Error: kramdown has no parser to handle the specified input format: GFMsdfsdf
+
+===== COMPILATION STACK:
+
+  - [item]   /about/ (rep default)
+
+===== STACK TRACE:
+
+  0. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/kramdown-1.8.0/lib/kramdown/document.rb:109:in `initialize'
+  1. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/filters/kramdown.rb:14:in `new'
+  2. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/filters/kramdown.rb:14:in `run'
+  3. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/base/compilation/filter.rb:117:in `setup_and_run'
+  4. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/base/result_data/item_rep.rb:343:in `filter'
+  5. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/base/compilation/item_rep_proxy.rb:45:in `filter'
+  6. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/base/compilation/rule_context.rb:59:in `filter'
+  7. /Users/josua/RubymineProjects/blog.schmijos.ch/Rules:18:in `block in parse'
+  8. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/base/compilation/rule.rb:69:in `instance_exec'
+  9. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/base/compilation/rule.rb:69:in `apply_to'
+  10. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/base/compilation/compiler.rb:385:in `compile_rep'
+  11. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/base/compilation/compiler.rb:341:in `block in compile_reps'
+  12. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/base/compilation/compiler.rb:334:in `loop'
+  13. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/base/compilation/compiler.rb:334:in `compile_reps'
+  14. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/base/compilation/compiler.rb:87:in `run'
+  15. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  16. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/cli/commands/compile.rb:383:in `block in run'
+  17. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/cli/commands/compile.rb:425:in `run_listeners_while'
+  18. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/cli/commands/compile.rb:382:in `run'
+  19. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/cli/command_runner.rb:12:in `block in call'
+  20. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/cli/error_handler.rb:72:in `handle_while'
+  21. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/cli/error_handler.rb:24:in `handle_while'
+  22. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/cli/command_runner.rb:11:in `call'
+  23. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command_dsl.rb:233:in `block in runner'
+  24. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:294:in `call'
+  25. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
+  26. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
+  27. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/cli/commands/nanoc.rb:39:in `block in define'
+  28. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:294:in `call'
+  29. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
+  30. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
+  31. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/cli.rb:58:in `block in run'
+  32. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/cli/error_handler.rb:72:in `handle_while'
+  33. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/cli/error_handler.rb:24:in `handle_while'
+  34. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib/nanoc/cli.rb:56:in `run'
+  35. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/bin/nanoc:25:in `<top (required)>'
+  36. /Users/josua/.rbenv/versions/2.2.2/bin/nanoc:23:in `load'
+
+===== VERSION INFORMATION:
+
+nanoc 3.8.0 © 2007-2015 Denis Defreyne.
+Running ruby 2.2.2 (2015-04-13) on x86_64-darwin14 with RubyGems 2.4.5.
+
+===== SYSTEM INFORMATION:
+
+Darwin Josuas-MacBook-Pro.local 14.3.0 Darwin Kernel Version 14.3.0: Mon Mar 23 11:59:05 PDT 2015; root:xnu-2782.20.48~5/RELEASE_X86_64 x86_64
+
+===== INSTALLED GEMS:
+
+  adsf 1.2.0
+  bundler 1.10.6
+  colored 1.2
+  cri 2.7.0
+  kramdown 1.8.0
+  nanoc 3.8.0
+  rack 1.6.4
+
+===== ENVIRONMENT:
+
+ARCHFLAGS => "-arch x86_64"
+AUTOJUMP_ERROR_PATH => "/Users/josua/Library/autojump/errors.log"
+AUTOJUMP_SOURCED => "1"
+Apple_PubSub_Socket_Render => "/private/tmp/com.apple.launchd.812ADDmfG0/Render"
+BUNDLE_BIN_PATH => "/Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bundler-1.10.6/bin/bundle"
+BUNDLE_GEMFILE => "/Users/josua/RubymineProjects/blog.schmijos.ch/Gemfile"
+BUNDLE_ORIG_MANPATH => "/Users/josua/.nvm/versions/io.js/v2.3.3/share/man:/usr/local/share/man/de:/usr/local/share/man:/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man"
+COLORFGBG => "7;0"
+DISPLAY => "/private/tmp/com.apple.launchd.1jLmXoV73F/org.macosforge.xquartz:0"
+GEM_HOME => "/Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0"
+GEM_PATH => "/Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0:/Users/josua/.gem/ruby/2.2.0"
+HOME => "/Users/josua"
+ITERM_PROFILE => "Default"
+ITERM_SESSION_ID => "w0t0p1"
+LANG => "de_CH.UTF-8"
+LC_CTYPE => "UTF-8"
+LESS => "-R"
+LOGNAME => "josua"
+LSCOLORS => "Gxfxcxdxbxegedabagacad"
+MANPATH => "/Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/kramdown-1.8.0/man:/Users/josua/.nvm/versions/io.js/v2.3.3/share/man:/usr/local/share/man/de:/usr/local/share/man:/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man"
+NVM_BIN => "/Users/josua/.nvm/versions/io.js/v2.3.3/bin"
+NVM_DIR => "/Users/josua/.nvm"
+NVM_IOJS_ORG_MIRROR => "https://iojs.org/dist"
+NVM_IOJS_ORG_VERSION_LISTING => "https://iojs.org/dist/index.tab"
+NVM_NODEJS_ORG_MIRROR => "https://nodejs.org/dist"
+NVM_PATH => "/Users/josua/.nvm/versions/io.js/v2.3.3/lib/node"
+NVM_RC_VERSION => ""
+OLDPWD => "/usr/local/Cellar/rbenv-gem-rehash/1.0.0"
+PAGER => "less"
+PATH => "/Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bin:/Users/josua/.rbenv/versions/2.2.2/bin:/usr/local/Cellar/rbenv/0.4.0/libexec:/Users/josua/.pyenv/bin:/Users/josua/.nvm/versions/io.js/v2.3.3/bin:/Users/josua/.rbenv/shims:/usr/local/bin:/usr/local/heroku/bin:/Users/josua/.bin:/usr/bin:/bin:/usr/sbin:/sbin:NVM_BIN"
+PWD => "/Users/josua/RubymineProjects/blog.schmijos.ch"
+PYENV_ROOT => "/Users/josua/.pyenv"
+RBENV_DIR => "/Users/josua/RubymineProjects/blog.schmijos.ch"
+RBENV_HOOK_PATH => ":/Users/josua/.rbenv/rbenv.d:/usr/local/etc/rbenv.d:/etc/rbenv.d:/usr/lib/rbenv/hooks"
+RBENV_ROOT => "/Users/josua/.rbenv"
+RBENV_VERSION => "2.2.2"
+RUBYLIB => "/Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bundler-1.10.6/lib:/usr/local/Cellar/rbenv-gem-rehash/1.0.0"
+RUBYOPT => "-rbundler/setup"
+SECURITYSESSIONID => "186a5"
+SHELL => "/bin/zsh"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/private/tmp/com.apple.launchd.gcLs9RYO14/Listeners"
+SSH_KEY_PATH => "~/.ssh/dsa_id"
+TERM => "xterm-256color"
+TERM_PROGRAM => "iTerm.app"
+TMPDIR => "/var/folders/tk/x859v0090f97200xmtd4x1yw0000gn/T/"
+USER => "josua"
+XPC_FLAGS => "0x0"
+XPC_SERVICE_NAME => "0"
+ZSH => "/Users/josua/.oh-my-zsh"
+__CF_USER_TEXT_ENCODING => "0x1F5:0x0:0x0"
+
+===== GEMFILE.LOCK:
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    adsf (1.2.0)
+      rack (>= 1.0.0)
+    colored (1.2)
+    cri (2.7.0)
+      colored (~> 1.2)
+    kramdown (1.8.0)
+    nanoc (3.8.0)
+      cri (~> 2.3)
+    rack (1.6.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adsf
+  kramdown
+  nanoc
+
+BUNDLED WITH
+   1.10.6
+
+===== LOAD PATHS:
+
+  0. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib
+  1. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/nanoc-3.8.0/lib
+  2. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/kramdown-1.8.0/lib
+  3. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib
+  4. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/colored-1.2/lib
+  5. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/adsf-1.2.0/lib
+  6. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib
+  7. /usr/local/Cellar/rbenv-gem-rehash/1.0.0
+  8. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bundler-1.10.6/lib
+  9. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/site_ruby/2.2.0
+  10. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/site_ruby/2.2.0/x86_64-darwin14
+  11. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/site_ruby
+  12. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/vendor_ruby/2.2.0
+  13. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/vendor_ruby/2.2.0/x86_64-darwin14
+  14. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/vendor_ruby
+  15. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/2.2.0
+  16. /Users/josua/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14
