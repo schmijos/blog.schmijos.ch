@@ -2,7 +2,7 @@
 title: AngularJS and Rails 4 Api Resources
 slug: angularjs-and-rails-4-api-resources
 kind: article
-tags: GRAPHICS, NVIDIA, SETUP, UBUNTU
+tags: angularjs, api, architecture, oop, rails
 created_at: 2015-08-22
 ---
 
@@ -25,23 +25,11 @@ Rails
 
 The rails part relies on standard libraries. Only rails-api is used as an additional gem.
 
-Routing
+## Routing
 
 config/routes.rb contains the versioned provided resources in the api namespace. For every api version, we introduce a new sub-namespace where we can declare new features.
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
+```
 namespace :api, defaults: {format: :json}, constraints: { format: 'json' } do
   namespace :v1 do
     resources :samples
@@ -55,7 +43,9 @@ namespace :api, defaults: {format: :json}, constraints: { format: 'json' } do
     end
   end
 end
-Models
+```
+
+## Models
 
 app/models/sample.rb is intentionally kept simple. There’s no versioning here. We’re always dealing with the newest data. The api controllers are held responsible of backwards compatibility. This constraint is maybe not suitable for very big and often changing apis.
 
