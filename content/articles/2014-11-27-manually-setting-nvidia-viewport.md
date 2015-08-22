@@ -1,5 +1,6 @@
 ---
 title: Manually Setting nVidia Viewport
+slug: manually-setting-nvidia-viewport
 kind: article
 tags: GRAPHICS, NVIDIA, SETUP, UBUNTU
 created_at: 2015-08-22

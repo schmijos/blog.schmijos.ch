@@ -1,4 +1,6 @@
 tmp/
 output/
 
+crash.log
+
 .idea/

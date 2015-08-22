@@ -1,5 +1,6 @@
 ---
 title: AngularJS and Rails 4 Api Resources
+slug: angularjs-and-rails-4-api-resources
 kind: article
 tags: GRAPHICS, NVIDIA, SETUP, UBUNTU
 created_at: 2015-08-22
