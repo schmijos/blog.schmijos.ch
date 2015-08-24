@@ -1,0 +1,18 @@
+---
+author: schmijos
+comments: true
+date: 2012-04-28 19:15:44+00:00
+layout: post
+slug: kismet-for-asus-eeepc-1000he
+title: Kismet for Asus EeePC 1000HE
+wordpress_id: 259
+categories:
+- Super User
+---
+
+Kismet is a powerful wifi analysis tool. It lists all available wireless networks around your position.
+[caption id="attachment_260" align="alignnone" width="300" caption="Kismet Screenshot"][![Kismet Screenshot](http://www.miraculum.ch/wp-content/uploads/Bildschirmfoto-am-2012-04-28-204439-300x175.png)](http://www.miraculum.ch/wp-content/uploads/Bildschirmfoto-am-2012-04-28-204439.png)[/caption]
+But there's one little problem with the installation. The Kismet server needs to know the chipset of you wireless card and your user name. Therefore you have to edit the following entries in `/etc/kismet/kismet.conf`:
+
+`suiduser=username
+source=rt2500,wlan0,atheros`
