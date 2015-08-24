@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2014-11-27 14:33:46+00:00
-layout: post
+kind: article
 slug: manually-setting-nvidia-viewport
 title: Manually Setting nVidia Viewport
-wordpress_id: 510
 categories:
 - Super User
 tags:

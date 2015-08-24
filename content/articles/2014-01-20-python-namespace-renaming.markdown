@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2014-01-20 16:28:14+00:00
-layout: post
+kind: article
 slug: python-namespace-renaming
 title: Python Namespace Renaming
-wordpress_id: 471
 categories:
 - Programming
 - Python

@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2014-01-21 15:32:59+00:00
-layout: post
+kind: article
 slug: use-a-proxy-with-ubuntu-apt
 title: Use a Proxy with Ubuntu APT
-wordpress_id: 480
 categories:
 - Super User
 tags:

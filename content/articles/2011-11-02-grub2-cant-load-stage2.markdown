@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-11-02 09:40:46+00:00
-layout: post
+kind: article
 slug: grub2-cant-load-stage2
 title: Grub2 can't load stage2
-wordpress_id: 232
 categories:
 - Server Administration
 tags:

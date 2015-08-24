@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-07-28 11:32:41+00:00
-layout: post
+kind: article
 slug: unity-sucks-on-asus-eee-pc-1000he
 title: Unity sucks on Asus Eee PC 1000HE
-wordpress_id: 177
 categories:
 - Super User
 tags:

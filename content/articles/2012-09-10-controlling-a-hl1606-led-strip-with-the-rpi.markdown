@@ -1,11 +1,9 @@
 ---
 author: hori
-comments: true
 date: 2012-09-10 22:52:08+00:00
-layout: post
+kind: article
 slug: controlling-a-hl1606-led-strip-with-the-rpi
 title: Controlling a HL1606 LED strip with the RPi
-wordpress_id: 336
 categories:
 - Programming
 - Raspberry Pi

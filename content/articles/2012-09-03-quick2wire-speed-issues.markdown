@@ -1,11 +1,9 @@
 ---
 author: hori
-comments: true
 date: 2012-09-03 19:20:17+00:00
-layout: post
+kind: article
 slug: quick2wire-speed-issues
 title: quick2wire speed issues
-wordpress_id: 325
 categories:
 - Programming
 - Raspberry Pi

@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-05-23 07:27:35+00:00
-layout: post
+kind: article
 slug: cp-casting-excercise
 title: C++ Casting Excercise
-wordpress_id: 127
 categories:
 - Programming
 tags:

@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-11-02 10:12:52+00:00
-layout: post
+kind: article
 slug: asus-eeepc-1000he-3-5-years-of-service
 title: Asus EeePC 1000HE - 3.5 Years of Service
-wordpress_id: 234
 categories:
 - Super User
 tags:

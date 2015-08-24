@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2014-08-13 11:17:53+00:00
-layout: post
+kind: article
 slug: angularjs-and-rails-4-api-resources
 title: AngularJS and Rails 4 Api Resources
-wordpress_id: 559
 categories:
 - Programming
 - Rails

@@ -1,11 +1,9 @@
 ---
 author: hori
-comments: true
 date: 2012-08-11 21:33:48+00:00
-layout: post
+kind: article
 slug: setting-up-raspbian
 title: Setting up Raspbian
-wordpress_id: 273
 categories:
 - Raspberry Pi
 tags:

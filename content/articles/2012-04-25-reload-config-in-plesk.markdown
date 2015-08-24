@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2012-04-25 14:02:43+00:00
-layout: post
+kind: article
 slug: reload-config-in-plesk
 title: Reload Config in Plesk
-wordpress_id: 254
 categories:
 - Server Administration
 tags:

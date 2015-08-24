@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2014-03-06 08:47:24+00:00
-layout: post
+kind: article
 slug: no-escaping-leads-to-an-http-505
 title: 'No Escaping Leads to an HTTP 505  '
-wordpress_id: 512
 categories:
 - Programming
 - Python

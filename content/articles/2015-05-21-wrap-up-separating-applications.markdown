@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2015-05-21 20:41:10+00:00
-layout: post
+kind: article
 slug: wrap-up-separating-applications
 title: 'Wrap-Up: Separating Applications'
-wordpress_id: 600
 categories:
 - Programming
 tags:

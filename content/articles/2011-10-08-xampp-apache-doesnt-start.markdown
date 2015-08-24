@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-10-08 19:34:06+00:00
-layout: post
+kind: article
 slug: xampp-apache-doesnt-start
 title: Xampp Apache Doesn't Start
-wordpress_id: 211
 categories:
 - Server Administration
 - Uncategorized

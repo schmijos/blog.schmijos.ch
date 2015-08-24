@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2014-01-15 15:42:48+00:00
-layout: post
+kind: article
 slug: runtime-analysis-real-world-example
 title: Runtime Analysis - Real World Example
-wordpress_id: 454
 categories:
 - Programming
 - Python

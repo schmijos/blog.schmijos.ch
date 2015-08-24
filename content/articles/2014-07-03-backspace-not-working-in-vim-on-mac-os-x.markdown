@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2014-07-03 08:28:23+00:00
-layout: post
+kind: article
 slug: backspace-not-working-in-vim-on-mac-os-x
 title: Backspace Not Working in VIM on Mac OS X
-wordpress_id: 554
 categories:
 - Super User
 tags:

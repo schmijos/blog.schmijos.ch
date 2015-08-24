@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-05-23 08:40:37+00:00
-layout: post
+kind: article
 slug: java-integer-lookup-table
 title: Java - Integer Lookup Table
-wordpress_id: 95
 categories:
 - Programming
 tags:

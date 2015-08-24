@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-04-21 13:05:45+00:00
-layout: post
+kind: article
 slug: c-references-vs-pointers
 title: C++ - References vs. Pointers
-wordpress_id: 84
 categories:
 - Programming
 tags:

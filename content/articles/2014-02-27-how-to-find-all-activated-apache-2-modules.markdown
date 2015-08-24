@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2014-02-27 11:18:32+00:00
-layout: post
+kind: article
 slug: how-to-find-all-activated-apache-2-modules
 title: How to Find Activated Apache 2 Modules
-wordpress_id: 505
 categories:
 - Server Administration
 tags:

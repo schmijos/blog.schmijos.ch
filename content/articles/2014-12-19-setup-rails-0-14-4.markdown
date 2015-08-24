@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2014-12-19 11:28:44+00:00
-layout: post
+kind: article
 slug: setup-rails-0-14-4
 title: Setup Rails 0.14.4
-wordpress_id: 584
 categories:
 - Programming
 - Rails

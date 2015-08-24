@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-07-27 14:45:48+00:00
-layout: post
+kind: article
 slug: raid0-performance-test
 title: RAID0 Performance Test
-wordpress_id: 154
 categories:
 - Server Administration
 tags:

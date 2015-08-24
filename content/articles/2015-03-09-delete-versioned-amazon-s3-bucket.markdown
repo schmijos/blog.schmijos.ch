@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2015-03-09 10:02:32+00:00
-layout: post
+kind: article
 slug: delete-versioned-amazon-s3-bucket
 title: Delete Versioned Amazon S3 Bucket
-wordpress_id: 593
 categories:
 - Server Administration
 tags:

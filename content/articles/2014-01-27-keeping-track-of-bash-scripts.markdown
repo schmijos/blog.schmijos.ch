@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2014-01-27 13:00:17+00:00
-layout: post
+kind: article
 slug: keeping-track-of-bash-scripts
 title: Keeping Track of Bash Scripts
-wordpress_id: 488
 categories:
 - Programming
 - Server Administration

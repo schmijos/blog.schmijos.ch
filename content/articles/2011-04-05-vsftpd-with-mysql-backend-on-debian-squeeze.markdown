@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-04-05 12:27:11+00:00
-layout: post
+kind: article
 slug: vsftpd-with-mysql-backend-on-debian-squeeze
 title: vsftpd with mysql backend on Debian Squeeze
-wordpress_id: 47
 categories:
 - Server Administration
 tags:

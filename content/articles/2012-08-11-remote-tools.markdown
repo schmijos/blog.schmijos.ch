@@ -1,11 +1,9 @@
 ---
 author: hori
-comments: true
 date: 2012-08-11 22:20:20+00:00
-layout: post
+kind: article
 slug: remote-tools
 title: Remote Tools
-wordpress_id: 280
 categories:
 - Raspberry Pi
 - Server Administration

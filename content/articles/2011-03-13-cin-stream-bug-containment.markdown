@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-03-13 17:49:19+00:00
-layout: post
+kind: article
 slug: cin-stream-bug-containment
 title: cin stream - bug containment?
-wordpress_id: 13
 categories:
 - Programming
 tags:

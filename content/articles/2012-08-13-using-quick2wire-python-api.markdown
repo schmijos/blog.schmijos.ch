@@ -1,11 +1,9 @@
 ---
 author: hori
-comments: true
 date: 2012-08-13 21:44:31+00:00
-layout: post
+kind: article
 slug: using-quick2wire-python-api
 title: Using Quick2Wire Python API
-wordpress_id: 310
 categories:
 - Raspberry Pi
 - Server Administration

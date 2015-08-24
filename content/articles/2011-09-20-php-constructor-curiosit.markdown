@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-09-20 09:49:13+00:00
-layout: post
+kind: article
 slug: php-constructor-curiosit
 title: PHP Constructor Curiosity
-wordpress_id: 204
 categories:
 - Programming
 tags:

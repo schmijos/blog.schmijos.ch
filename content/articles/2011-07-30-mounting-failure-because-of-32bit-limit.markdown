@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-07-30 09:55:13+00:00
-layout: post
+kind: article
 slug: mounting-failure-because-of-32bit-limit
 title: Mounting Failure Because of 32bit Limit
-wordpress_id: 188
 categories:
 - Server Administration
 tags:

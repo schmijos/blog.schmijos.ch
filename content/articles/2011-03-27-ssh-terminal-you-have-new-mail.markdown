@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2011-03-27 10:27:19+00:00
-layout: post
+kind: article
 slug: ssh-terminal-you-have-new-mail
 title: 'SSH-Terminal: You have new mail'
-wordpress_id: 70
 categories:
 - Server Administration
 tags:

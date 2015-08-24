@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2014-04-30 08:25:21+00:00
-layout: post
+kind: article
 slug: offline-markdown-viewer
 title: Offline Markdown Viewer
-wordpress_id: 543
 categories:
 - Documentation
 tags:

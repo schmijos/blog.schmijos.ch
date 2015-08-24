@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2014-02-13 16:59:25+00:00
-layout: post
+kind: article
 slug: vba-without-lazy-evaluation
 title: VBA without Lazy-Evaluation
-wordpress_id: 497
 categories:
 - Programming
 - VBA

@@ -1,11 +1,9 @@
 ---
 author: hori
-comments: true
 date: 2012-08-13 18:50:02+00:00
-layout: post
+kind: article
 slug: installing-and-using-quik2wire-gpio-admin
 title: Installing and using Quik2Wire GPIO-Admin
-wordpress_id: 302
 categories:
 - Programming
 - Raspberry Pi

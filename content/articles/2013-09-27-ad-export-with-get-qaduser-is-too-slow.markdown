@@ -1,11 +1,9 @@
 ---
 author: schmijos
-comments: true
 date: 2013-09-27 09:39:17+00:00
-layout: post
+kind: article
 slug: ad-export-with-get-qaduser-is-too-slow
 title: AD-Export with Get-QADUser is too slow
-wordpress_id: 415
 categories:
 - Programming
 tags:
