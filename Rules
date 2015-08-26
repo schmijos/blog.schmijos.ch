@@ -28,8 +28,9 @@ compile '*' do
 end
 
 route 'articles/*' do
-  date = item[:created_at].to_s
-  y,m,d = /([0-9]+)\-([0-9]+)\-([0-9]+)/.match(date).captures
+  date_match = /([0-9]+)\-([0-9]+)\-([0-9]+)/.match(item[:created_at].to_s)
+  fail('Please provide valid date format in article header') if date_match.nil?
+  y,m,d = date_match.captures
   slug = item[:slug]
   "/#{y}/#{m}/#{d}/#{slug}/index.html"
 end
