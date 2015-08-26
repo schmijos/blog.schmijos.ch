@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2011-11-02 09:40:46+00:00
+created_at: 2011-11-02 09:40:46+00:00
 kind: article
 slug: grub2-cant-load-stage2
 title: Grub2 can't load stage2

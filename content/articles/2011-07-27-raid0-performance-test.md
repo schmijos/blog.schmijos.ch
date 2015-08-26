@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2011-07-27 14:45:48+00:00
+created_at: 2011-07-27 14:45:48+00:00
 kind: article
 slug: raid0-performance-test
 title: RAID0 Performance Test

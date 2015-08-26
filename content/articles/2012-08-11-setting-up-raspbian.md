@@ -1,6 +1,6 @@
 ---
 author: hori
-date: 2012-08-11 21:33:48+00:00
+created_at: 2012-08-11 21:33:48+00:00
 kind: article
 slug: setting-up-raspbian
 title: Setting up Raspbian

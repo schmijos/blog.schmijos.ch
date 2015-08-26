@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2012-04-28 19:15:44+00:00
+created_at: 2012-04-28 19:15:44+00:00
 kind: article
 slug: kismet-for-asus-eeepc-1000he
 title: Kismet for Asus EeePC 1000HE

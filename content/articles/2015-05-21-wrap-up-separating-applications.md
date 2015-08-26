@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2015-05-21 20:41:10+00:00
+created_at: 2015-05-21 20:41:10+00:00
 kind: article
 slug: wrap-up-separating-applications
 title: 'Wrap-Up: Separating Applications'

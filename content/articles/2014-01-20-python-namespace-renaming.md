@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2014-01-20 16:28:14+00:00
+created_at: 2014-01-20 16:28:14+00:00
 kind: article
 slug: python-namespace-renaming
 title: Python Namespace Renaming

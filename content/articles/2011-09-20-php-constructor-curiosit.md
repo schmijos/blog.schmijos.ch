@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2011-09-20 09:49:13+00:00
+created_at: 2011-09-20 09:49:13+00:00
 kind: article
 slug: php-constructor-curiosit
 title: PHP Constructor Curiosity

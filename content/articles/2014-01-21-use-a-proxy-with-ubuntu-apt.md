@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2014-01-21 15:32:59+00:00
+created_at: 2014-01-21 15:32:59+00:00
 kind: article
 slug: use-a-proxy-with-ubuntu-apt
 title: Use a Proxy with Ubuntu APT

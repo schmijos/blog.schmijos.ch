@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2014-02-13 16:59:25+00:00
+created_at: 2014-02-13 16:59:25+00:00
 kind: article
 slug: vba-without-lazy-evaluation
 title: VBA without Lazy-Evaluation

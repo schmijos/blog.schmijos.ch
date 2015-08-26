@@ -1,6 +1,6 @@
 ---
 author: fschweizer
-date: 2013-03-26 16:37:46+00:00
+created_at: 2013-03-26 16:37:46+00:00
 kind: article
 slug: setting-up-unit-testing-in-zend-framework-2
 title: Setting up unit testing in Zend Framework 2

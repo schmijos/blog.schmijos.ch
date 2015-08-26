@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2014-03-06 08:47:24+00:00
+created_at: 2014-03-06 08:47:24+00:00
 kind: article
 slug: no-escaping-leads-to-an-http-505
 title: 'No Escaping Leads to an HTTP 505  '

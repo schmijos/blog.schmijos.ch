@@ -1,6 +1,6 @@
 ---
 author: hori
-date: 2012-08-13 18:50:02+00:00
+created_at: 2012-08-13 18:50:02+00:00
 kind: article
 slug: installing-and-using-quik2wire-gpio-admin
 title: Installing and using Quik2Wire GPIO-Admin

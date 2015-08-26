@@ -1,6 +1,6 @@
 ---
 author: hori
-date: 2012-09-03 19:20:17+00:00
+created_at: 2012-09-03 19:20:17+00:00
 kind: article
 slug: quick2wire-speed-issues
 title: quick2wire speed issues

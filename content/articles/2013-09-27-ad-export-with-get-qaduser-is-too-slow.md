@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2013-09-27 09:39:17+00:00
+created_at: 2013-09-27 09:39:17+00:00
 kind: article
 slug: ad-export-with-get-qaduser-is-too-slow
 title: AD-Export with Get-QADUser is too slow

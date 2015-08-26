@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2013-09-26 14:50:33+00:00
+created_at: 2013-09-26 14:50:33+00:00
 kind: article
 slug: modifying-a-list-of-strings-in-powershell
 title: Modifying a List of Strings in Powershell

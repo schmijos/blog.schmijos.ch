@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2014-11-27 14:33:46+00:00
+created_at: 2014-11-27 14:33:46+00:00
 kind: article
 slug: manually-setting-nvidia-viewport
 title: Manually Setting nVidia Viewport

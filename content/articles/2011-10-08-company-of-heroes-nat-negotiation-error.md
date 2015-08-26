@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2011-10-08 19:50:42+00:00
+created_at: 2011-10-08 19:50:42+00:00
 kind: article
 slug: company-of-heroes-nat-negotiation-error
 title: Company of Heroes - NAT Negotiation Error

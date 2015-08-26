@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2011-03-13 17:49:19+00:00
+created_at: 2011-03-13 17:49:19+00:00
 kind: article
 slug: cin-stream-bug-containment
 title: cin stream - bug containment?

@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2013-10-23 12:49:18+00:00
+created_at: 2013-10-23 12:49:18+00:00
 kind: article
 slug: altiris-7-5-requires-aspnet-2-0
 title: Altiris 7.5 requires ASP.NET 2.0

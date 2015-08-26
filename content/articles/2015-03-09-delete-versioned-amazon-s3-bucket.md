@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2015-03-09 10:02:32+00:00
+created_at: 2015-03-09 10:02:32+00:00
 kind: article
 slug: delete-versioned-amazon-s3-bucket
 title: Delete Versioned Amazon S3 Bucket

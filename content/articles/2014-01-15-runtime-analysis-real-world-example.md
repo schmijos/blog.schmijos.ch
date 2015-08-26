@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2014-01-15 15:42:48+00:00
+created_at: 2014-01-15 15:42:48+00:00
 kind: article
 slug: runtime-analysis-real-world-example
 title: Runtime Analysis - Real World Example

@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2014-08-13 11:17:53+00:00
+created_at: 2014-08-13 11:17:53+00:00
 kind: article
 slug: angularjs-and-rails-4-api-resources
 title: AngularJS and Rails 4 Api Resources

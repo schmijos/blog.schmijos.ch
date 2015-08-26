@@ -1,6 +1,6 @@
 ---
 author: admin
-date: 2010-04-12 20:29:27+00:00
+created_at: 2010-04-12 20:29:27+00:00
 kind: article
 slug: hello-world
 title: echo 42

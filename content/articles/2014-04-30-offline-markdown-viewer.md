@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2014-04-30 08:25:21+00:00
+created_at: 2014-04-30 08:25:21+00:00
 kind: article
 slug: offline-markdown-viewer
 title: Offline Markdown Viewer

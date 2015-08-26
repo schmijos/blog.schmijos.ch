@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2014-01-27 13:00:17+00:00
+created_at: 2014-01-27 13:00:17+00:00
 kind: article
 slug: keeping-track-of-bash-scripts
 title: Keeping Track of Bash Scripts

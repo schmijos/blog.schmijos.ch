@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2012-11-27 13:42:34+00:00
+created_at: 2012-11-27 13:42:34+00:00
 kind: article
 slug: serialize-php-objects-to-xml
 title: Serialize PHP Objects to XML

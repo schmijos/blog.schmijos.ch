@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2011-05-23 08:40:37+00:00
+created_at: 2011-05-23 08:40:37+00:00
 kind: article
 slug: java-integer-lookup-table
 title: Java - Integer Lookup Table

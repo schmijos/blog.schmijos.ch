@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2011-08-06 11:11:14+00:00
+created_at: 2011-08-06 11:11:14+00:00
 kind: article
 slug: cant-mount-samba-share-more-than-onc
 title: Cant Mount Samba Share More Than Once

@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2014-03-28 15:31:12+00:00
+created_at: 2014-03-28 15:31:12+00:00
 kind: article
 slug: vba-object-initialization-trap
 title: VBA Object Initialization Trap

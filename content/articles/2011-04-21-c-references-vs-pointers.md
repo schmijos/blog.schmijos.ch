@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2011-04-21 13:05:45+00:00
+created_at: 2011-04-21 13:05:45+00:00
 kind: article
 slug: c-references-vs-pointers
 title: C++ - References vs. Pointers

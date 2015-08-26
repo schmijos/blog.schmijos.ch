@@ -1,6 +1,6 @@
 ---
 author: hori
-date: 2012-09-10 22:52:08+00:00
+created_at: 2012-09-10 22:52:08+00:00
 kind: article
 slug: controlling-a-hl1606-led-strip-with-the-rpi
 title: Controlling a HL1606 LED strip with the RPi

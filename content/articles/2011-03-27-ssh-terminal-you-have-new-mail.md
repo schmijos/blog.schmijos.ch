@@ -1,6 +1,6 @@
 ---
 author: schmijos
-date: 2011-03-27 10:27:19+00:00
+created_at: 2011-03-27 10:27:19+00:00
 kind: article
 slug: ssh-terminal-you-have-new-mail
 title: 'SSH-Terminal: You have new mail'
