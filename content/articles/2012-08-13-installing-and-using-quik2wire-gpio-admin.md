@@ -46,7 +46,7 @@ You can either pick them up at your local electronics store or you can buy a com
 
 The Hardware build up is as follows:
 
-![Shematic for the first I/O Test](images/2012/GPIO-300x278.jpg)
+![Shematic for the first I/O Test](/images/2012/GPIO-300x278.jpg)
 
 Note you can use almost any pin Instead of GPIO7 and 8.
 
@@ -54,7 +54,7 @@ Note you can use almost any pin Instead of GPIO7 and 8.
 
 When it’s done it should look something like this:
 
-![](images/2012/GPIO2-1024x613.jpg)
+![](/images/2012/GPIO2-1024x613.jpg)
 
 **Software Setup:**
 

@@ -10,7 +10,7 @@ tags:
 - C++
 ---
 
-![memory image](images/2011/ref-pointer.png)
+![memory image](/images/2011/ref-pointer.png)
 
 Two or three weeks ago, we learned about the differences between references and pointers in C++. Since pointers are "evil" in C++, the difference is not very important for the reality, but very important, if you have coded in C before. Therefore, I'd like to explain the difference between references and pointers shortly. 
 

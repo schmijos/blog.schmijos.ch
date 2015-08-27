@@ -15,7 +15,7 @@ saying "You have new mail" ("Sie haben neue Nachrichten"). After some googleing 
 that I had to type in the following to see this "mail": `mail` Very self-explanatory :-P
 Then a console mail client appeared on my desk
 
-![mail per ssh](images/2011/ssh-mail.png)
+![mail per ssh](/images/2011/ssh-mail.png)
 
 You can navigate through your in-box by typing the number of a mail.
   

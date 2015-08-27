@@ -36,7 +36,7 @@ Download and unpack PuTTY to a folder of your choice and start it. All you need 
 
 After you’re done just click “Open”, accept the security certificate and you will see a command line that behaves almost identical to the one on your Pi. Thus the login is the same and so are the commands. You can copy things to and from the clipboard with the right mouse button.
 
-![](images/2012/putty2-300x233.jpg)
+![](/images/2012/putty2-300x233.jpg)
 
 Note: typing startx will start the GUI on the Pi and not on the conected remote machine
 
@@ -46,6 +46,6 @@ When you start WinSCP just input the the IP of your Pi, 10.0.0.141 in my case, i
 
 Log in using your standard credentials and accept the security certificate. Now you should see a window split in the middle. The left side is your local PC and the right side is the Raspberry Pi. Now you can drag-and-drop files to and from you’re your Pi and you can also edit text files directly in the integrated editor.
 
-![](images/2012/winscp2-300x229.jpg)
+![](/images/2012/winscp2-300x229.jpg)
 
 Note: All File transfer is done encrypted so it is not really the best option for copying large files which might take some time.
