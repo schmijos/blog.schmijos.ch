@@ -22,7 +22,7 @@ After the installation and the configuration of the system, I measured the read/
 and
 `time dd if=file of=/dev/null`
 
-[caption id="attachment_157" align="alignnone" width="530" caption="RAID 0 - Performance Test 1"][![](http://www.miraculum.ch/wp-content/uploads/raid0diagram1.png)](http://www.miraculum.ch/wp-content/uploads/raid0diagram1.png)[/caption] 
+![RAID 0 - Performance Test 1](http://www.miraculum.ch/wp-content/uploads/raid0diagram1.png)
 
 As you see, write actions perform better than read actions. Why is that and how can we invert this effect? I think it's because the RAID software hasn't to check where to write data, but it must search for it on read access.
 

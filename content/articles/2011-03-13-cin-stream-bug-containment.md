@@ -36,8 +36,8 @@ int main() {
 At first I initialize a map where I'm going to count the vocals. I'm initializing it with zeroes per _boost::assign_. Then I iterate through the stream _cin_ and check if the current character is a vocal (exists as key in the map). At least I iterate through the map and write all vocal counts to the console.
 
 This piece of code works as expected if the last character typed in is a consonant. Otherwise the output looks like this:
-[caption id="attachment_34" align="alignnone" width="248" caption="Counting Vocals the Wrong Way"][![Vocal Count Fail](http://www.miraculum.ch/wp-content/uploads/wrong-console.png)](http://www.miraculum.ch/wp-content/uploads/wrong-console.png)[/caption]
 
+![Vocal Count Fail](http://www.miraculum.ch/wp-content/uploads/wrong-console.png)
 
 Whats wrong? 
 The point is, that the loop condition is still satisfied when the EOF character shows in. Therefore the last character is shifted twice.
@@ -51,6 +51,8 @@ while (cin >> c) {
 ```
 
 Then the output is correct.
-[caption id="attachment_37" align="alignnone" width="247" caption="Counting Vocals the Right Way"][![Correct Vocal Count](http://www.miraculum.ch/wp-content/uploads/right-console.png)](http://www.miraculum.ch/wp-content/uploads/right-console.png)[/caption]
+
+
+![Correct Vocal Count](http://www.miraculum.ch/wp-content/uploads/right-console.png)
 
 Why this weird behavior? There should be thrown an out of bound exception or something like that. Eventually it's some sort of "modern" bug containment for people who use streams carelessly or it is because of the consideration that a stream should be infinite by design.
