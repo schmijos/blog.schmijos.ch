@@ -63,28 +63,12 @@ I think the are more pros and contras and definitely it's not all black and whit
 
 **New hotness**: Enforce good encapsulation by separating projects. This is how the internet works. And it works well for us at Renuo. Btw. [we are hiring](https://www.renuo.ch/jobs/150426-ruby-on-rails-entwickler-job/)!
 
-
-
 * * *
-
-
-
-
-
-### 
-
-
-
 
 ### **Update**
 
-
 I was missing a buzzword: _microservice_
 
-
-<blockquote>The goal of microservices is to sufficiently decompose the application in order to facilitate agile application development and deployment.</blockquote>
-
+> The goal of microservices is to sufficiently decompose the application in order to facilitate agile application development and deployment.
 
 That's from the [nginx tech-blog](https://nginx.com/blog/introduction-to-microservices), which I recommend to read.
-
-
