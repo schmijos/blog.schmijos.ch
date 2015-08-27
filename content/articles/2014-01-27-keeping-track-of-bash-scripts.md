@@ -16,7 +16,7 @@ tags:
 
 If you have to execute a lot of bash commands in order, it's hard to keep track of their status. The following script executes any command in a given array and keeps track of its state and its consumed time. Additionally it exits on an error or returns a message on final success.
 
-[bash]
+```bash
 #!/bin/bash
 clear
 
@@ -41,4 +41,4 @@ for cmd in "${MAPFILE[@]}"; do
 done
 
 echo -e "\e[32msuccess!\e[0m"
-[/bash]
+```

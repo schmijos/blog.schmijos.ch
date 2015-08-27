@@ -14,19 +14,20 @@ tags:
 
 Today I tried to convert all strings in an array to lower case in the most simple way. Instead of using a common `for`- or `foreach`-block I use the short form of `foreach` in combination with a pipe.
 
-[powershell]
+```powershell
 $strings = "lULz", "GacH"
 $strings | % { $_.ToLower() }
 $strings | % { $_.ToUpper() }
-[/powershell]
+```
 
 With `$_` you can access each element and set it to lower- or upper case. As you can see, it is very compact.
 
 The result looks like that:
-[plain]
+
+```plain
 lulz
 gach
 LULZ
 GACH
-[/plain]
+```
 

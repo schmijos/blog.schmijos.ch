@@ -38,11 +38,11 @@ I have a separate folder home/git for all my repositories so all my files will p
 
 Since the API is also still under development I wouldn’t install it just yet but instead we include:
 
-[python]
+```python
 import sys
 # appends to PYTHONPATH the location of the example codes
 sys.path.append(r'/home/pi/git/quick2wire-python-api/src/')
-[/python]
+```
 
 
 in all our files so python will know where to look for the files and we can update them with git when newer versions become available.
@@ -55,7 +55,7 @@ Basicly the hardware Setup stayed the same as in the last post  ([http://www.mi
 
 Now we are ready to run our first python script: It basicly does the same thing we did manualy with the gpio-admin. It prints out the status of the switch every second and toggles the LED. You can copy the whole sample scipt into a file and name it something.py. I recommend you do this at your normal PC and then copy the file over to the Pi using WinSCP (see earlier post).
 
-[python]
+```python
 #!/usr/bin/env python3
 import sys
 # appends to PYTHONPATH the location of the example codes
@@ -69,7 +69,7 @@ while True:
 LED.value = 1 - LED.value
 print(switch.value)
 sleep(1)
-[/python]
+```
 
 you can run your script using the command:
 `python3 /Desktop/gpio.py`

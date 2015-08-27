@@ -53,7 +53,8 @@ The rails part relies on standard libraries. Only _rails-api_ is used as an addi
 
 
 `config/routes.rb` contains the versioned provided resources in the api namespace. For every api version, we introduce a new sub-namespace where we can declare new features.
-[rails]
+
+```rails
 namespace :api, defaults: {format: :json}, constraints: { format: 'json' } do
   namespace :v1 do
     resources :samples
@@ -67,7 +68,7 @@ namespace :api, defaults: {format: :json}, constraints: { format: 'json' } do
     end
   end
 end
-[/rails]
+```
 
 
 
@@ -75,11 +76,12 @@ end
 
 
 `app/models/sample.rb` is intentionally kept simple. There's no versioning here. We're always dealing with the newest data. The api controllers are held responsible of backwards compatibility. This constraint is maybe not suitable for very big and often changing apis.
-[rails]
+
+```rails
 class Sample < ActiveRecord::Base
   validates_presence_of :name
 end
-[/rails]
+```
 
 
 
@@ -87,7 +89,8 @@ end
 
 
 `app/controllers/api/v1/samples_controller.rb` contains the version 1 controller for handling access to _sample_ resources. It is based on a small api controller (provided by the _rails-api_ gem).
-[rails]
+
+```rails
 class Api::V1::SamplesController < Api::ApplicationController
   before_action :set_sample, only: [:show, :update, :destroy]
 
@@ -99,16 +102,19 @@ class Api::V1::SamplesController < Api::ApplicationController
   end
 
   # ...
-[/rails]
+```
 
-`app/controllers/api/v2/samples_controller.rb` contains version 2 based on version 1 by inheritance. Here we have access to all version 1 features and additionally to a new feature by the action `new_feature`.
-[rails]
+`app/controllers/api/v2/samples_controller.rb` contains version 2 based on version 1 
+by inheritance. Here we have access to all version 1 features and additionally to a 
+new feature by the action `new_feature`.
+
+```rails
 class Api::V2::SamplesController < Api::V1::SamplesController
   def new_feature
     render json: "lulz feature"
   end
 end
-[/rails]
+```
 
 
 
@@ -123,7 +129,8 @@ Entry point for the _AnguarJS_ app is the _Rails_ controller called `page_contro
 
 
 `app/assets/javascripts/app/app.js.coffee` contains configurations for the _ngRoute_ module. I also use a _Rails_ gem named _angular-rails-templates_ for autoloading slim templates. Rendering of _slim_ files has to be enabled (see: `config/initializers/angular_assets.rb`).
-[ror]
+
+```ruby
 @sampleapi = angular.module('sampleapi', ['ngRoute', 'rails', 'templates'])
 
 @sampleapi.config(($routeProvider) ->
@@ -135,7 +142,7 @@ Entry point for the _AnguarJS_ app is the _Rails_ controller called `page_contro
 
       .otherwise({redirectTo: '/samples/index'})
 )
-[/ror]
+```
 
 
 
@@ -143,7 +150,8 @@ Entry point for the _AnguarJS_ app is the _Rails_ controller called `page_contro
 
 
 `app/assets/javascripts/app/controllers/samples_controller.js.coffee` contains the _AngularJS_ controller for loading _samples_ from the api. All CRUD operations are included in the sample code. 
-[ror]
+
+```ruby
 @sampleapi.controller 'SamplesController', ['$scope', 'Sample', ($scope, Sample) ->
   $scope.samples = []
 
@@ -153,7 +161,7 @@ Entry point for the _AnguarJS_ app is the _Rails_ controller called `page_contro
       $scope.samples = results
 
   # ...
-[/ror]
+```
 
 
 
@@ -161,8 +169,9 @@ Entry point for the _AnguarJS_ app is the _Rails_ controller called `page_contro
 
 
 This simple application doesn't contain own javascript models. Everything is just loaded from the api. That's done with services and model factories in `app/assets/javascripts/app/services/sample.js.coffee`. For generating parameter formats accepted by _Rails_, I use a gem called _angularjs-rails-resource_. It took some time to find that, but I think it really simplifies things a lot (like mapping CRUD update to `PATCH`).
-[ror]
+
+```ruby
 @sampleapi.factory 'Sample', ['railsResourceFactory', (railsResourceFactory) ->
   return railsResourceFactory({url: '/api/v2/samples', name: 'sample'});
 ]
-[/ror]
+```

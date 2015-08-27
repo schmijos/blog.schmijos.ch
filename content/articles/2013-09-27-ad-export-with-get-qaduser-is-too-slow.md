@@ -15,7 +15,7 @@ tags:
 
 Sometimes I need to export more than 5000 Active Directory Users for analysis to CSV. Therefore I use an existing PowerShell script which uses the cmdlet `Get-QADUser`.
 
-[powershell]
+```powershell
 Add-PSSnapin Quest.ActiveRoles.ADManagement -ErrorAction SilentlyContinue
 Connect-QADService -service 'some.example.com' 
 
@@ -25,11 +25,11 @@ Get-QADUser -SizeLimit 0 -DontUseDefaultIncludedProperties
 	export-csv "c:\\temp\\export.csv" –encoding "unicode" -NoTypeInformation
 	
 Disconnect-QADService
-[/powershell]
+```
 
 The code above runs for about ten minutes before completion. I excessively searched for an alternative and found the .NET class `System.DirectoryServices.DirectorySearcher`. With the following code being executed it takes about 10 seconds to export all AD-Users to a CSV file.
 
-[powershell]
+```powershell
 $domain = "LDAP://some.example.com"
 $outfile = "c:\\temp\\export.csv"
 $properties = "company" ,"sAMAccountName", "displayName", "name", 
@@ -62,6 +62,6 @@ foreach($item in $list) {
 $table | Export-Csv $outfile –encoding "unicode" -NoTypeInformation
 
 Write-Host "Done."
-[/powershell]
+```
 
 I think the problem with the first code is the pipe linkage. The `Get-QADUser` cmdlet is not executed until output should be generated (indicated by `Export-Csv`). On execution every AD-User is written to the CSV one-by-one. The second script gets all Users and then writes them all-at-once.

@@ -99,7 +99,8 @@ I'll explain every file in detail.
 
 This file hold the relevant informations for phpunit like bootstrapping and testsuites.
 For our example module it is set up like following example:
-[xml]
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <phpunit bootstrap="Bootstrap.php">
@@ -112,7 +113,7 @@ For our example module it is set up like following example:
 		</testsuite>
 	</testsuites>
 </phpunit>
-[/xml]
+```
 
 
 
@@ -125,7 +126,7 @@ So it is for unit testing in Zend Framework 2.
 
 The TestConfig.php is nearly the same as the application.config.php file in the whole application. We define modules which should be loaded and where to find them and their configurations.
 
-[php]
+```php
 <?php
 return array(
 	'modules' => array(
@@ -142,7 +143,7 @@ return array(
 		),
 	),
 );
-[/php]
+```
 
 
 
@@ -153,7 +154,7 @@ return array(
 The biggest file and if there is anything wrong in it, testing will be impossible (and it feels like hell).
 I don't go into detail what it is doing. To say it in a few words: the modules are loaded.
 
-[php]
+```php
 <?php
 namespace ExampleTest; // our namespace
 
@@ -265,13 +266,11 @@ class Bootstrap
 }
 
 Bootstrap::init();
-[/php]
+```
 
 
 
 ## Testing
-
-
 
 So now everything is set up and we can start with writing our tests.
 For writing controller tests I recommend the [](http://zf2.readthedocs.org/en/release-2.0.6/user-guide/unit-testing.html).
@@ -280,8 +279,6 @@ If you want to test models you can extend your test class from PHPUnit_Framework
 
 
 ## Final word
-
-
 
 If you are like me and always having problems setting up unit testing I hope with this small guide I could help you at least with unit testing your Zend Framework 2 modules.
 As for me, I'm glad I got it finally working.

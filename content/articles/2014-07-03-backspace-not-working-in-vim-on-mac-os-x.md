@@ -14,7 +14,7 @@ tags:
 
 If _backspace_ isn't working on your Mac, then maybe VIM is running in compatibility mode. That means, you don't have any of the _Vi improved_ features enabled. You can set the following in your `~/.vimrc` to disable compatibility mode and set a "normal" backspace behaviour:
 
-[plain]
+```
 set nocompatible
 set backspace=indent,eol,start
-[/plain]
+```

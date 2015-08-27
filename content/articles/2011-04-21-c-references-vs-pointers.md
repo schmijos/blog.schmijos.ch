@@ -20,7 +20,7 @@ A reference is just an alias for some variable or type. You can point a referenc
 
 
 Look at this example:
-[cpp]
+```cpp
 int *ri;      // ri points to an int
 int *&x = ri; // x is a reference to a pointer of an int
 *x = 42;      // puts 42 at the address of the by x referenced pointer ri
@@ -30,7 +30,7 @@ int main() {
   std::cout << "Value at ri: " << *ri << std::endl;
   std::cout << "Value at x: " << *x << std::endl;
 }
-[/cpp]
+```
 
 **Summary:**
 Reference = Alias for a value

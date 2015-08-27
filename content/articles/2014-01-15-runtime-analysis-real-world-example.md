@@ -19,10 +19,10 @@ For my civil service I sometimes work for the bioinformatics departement of Agro
 
 For some reason they wanted to correlate DNA mutation positions with DNA recombination sequences of bacteria. This is about finding out if a position is in one of any of the provided ranges. The input data is a list of positions (pos) and a list of sequences (min, max) - both lists contain more than 100'000 entries. The output should be a list of positions matching at least one of the sequence ranges and a list of positions not matching any of the ranges.
 
-[python]
+```python
 ranges = [(3,7),(5,20),(21,35)]
 positions [4,6,22]
-[/python]
+```
 
 The bioinformatics guys wrote some code to achieve that, but they complained about it running to slow. A short look at the code revealed something that was preached in my studies a lot: nested loops are maybe bad. The worst case runtime of the one presented to me was _O(n²)_. This is relevant in theory, but hardly ever in practical experience. This time it was. The given script ran for about 6 hours before completion.
 
@@ -30,7 +30,7 @@ I redesigned the algorithm to an asymptotic runtime of _O(n log(log(n)))_. It th
 
 The resulting code is shown here (using Python 3):
 
-[python]
+```python
 import bisect, csv, time
 
 INPUT_FILE = "daten.txt"
@@ -108,4 +108,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-[/python]
+```

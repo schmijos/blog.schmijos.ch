@@ -17,9 +17,9 @@ If `apt-get` complains about not being able to reach the mirror server, you mayb
 
 You can configure a proxy for Apt by adding the folloing line to `/etc/apt/apt.conf.d/01proxy`.
 
-[bash]
+```bash
 Acquire::http::Proxy "http://proxyaddressorname:proxyport";
-[/bash]
+```
 
 `01proxy` is a chained config file for Apt and can be created if it doesn't exist.
 
@@ -28,13 +28,14 @@ After adding the entry, you can test the configuration by running `sudo apt-get 
 **Update 1:**
 Use the following bash commands to configure a proxy for _git_:
 
-[bash]
+```bash
 export http_proxy=http://proxyaddressorname:proxyport
 git config --global http.proxy $http_proxy
-[/bash]
+```
 
 **Update 2:**
 For _easy_install_ and _pip_ you can get the proxy settings working by exporting a https proxy, which actually is a http proxy.
-[bash]
+
+```bash
 export https_proxy=http://proxyaddressorname:proxyport
-[/bash]
+```

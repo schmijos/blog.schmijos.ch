@@ -17,13 +17,13 @@ tags:
 
 If you want to know what Apache 2 modules are enabled, you can use the following bash command.
 
-[bash]
+```bash
 apachectl -t -D DUMP_MODULES
-[/bash]
+```
 
 This provides the following output.
 
-[bash]
+```bash
 Loaded Modules:
  core_module (static)
  log_config_module (static)
@@ -51,7 +51,7 @@ Loaded Modules:
  setenvif_module (shared)
  status_module (shared)
 Syntax OK
-[/bash]
+```
 
 It's obviously not the only purpose of `apachectl`. Consulting the man page reveals some other helpful commands like a config test or start/stop/restart commands which are much faster than the init scripts.
 
