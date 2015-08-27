@@ -49,7 +49,7 @@ in all our files so python will know where to look for the files and we can upda
 
 **Hardware Setup:**
 
-Basicly the hardware Setup stayed the same as in the last post  ([http://www.miraculum.ch/2012/08/13/installing-and-using-quik2wire-gpio-admin/](http://www.miraculum.ch/2012/08/13/installing-and-using-quik2wire-gpio-admin/)) Due to a bug in the API the pins 24 and 26 (GPIO7 and 8) don’t work correctly at the moment so I moved the switch to pin 16 (GPIO23) and the LED to pin 18 (GPIO24)
+Basicly the hardware Setup stayed the same as ([in the last post](/2012/08/13/installing-and-using-quik2wire-gpio-admin/)) Due to a bug in the API the pins 24 and 26 (GPIO7 and 8) don’t work correctly at the moment so I moved the switch to pin 16 (GPIO23) and the LED to pin 18 (GPIO24)
 
 **Python Scripts:**
 

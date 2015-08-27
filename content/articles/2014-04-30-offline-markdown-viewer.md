@@ -17,4 +17,4 @@ If you're searching for a slim offline Markdown viewer for windows there's hope.
 
 ![On the left side there's the editor, on the right side the immediate result](/images/2014/mdpad-v1.1-600x412.jpg)
 
-Since not everybody has access to dropbox, here's another download link to the executable: [MDPad.v1.1 (467kb)](http://www.miraculum.ch/wp-content/uploads/MDPad.v1.1.zip)
+Since not everybody has access to dropbox, here's another download link to the executable: [MDPad.v1.1 (467kb)](/files/MDPad.v1.1.zip)

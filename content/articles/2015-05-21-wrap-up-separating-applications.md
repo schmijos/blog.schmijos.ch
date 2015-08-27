@@ -14,7 +14,7 @@ tags:
 - team
 ---
 
-Last year I wrote about how you could design an application with [AngularJS and Rails API Resources](//www.miraculum.ch/2014/08/13/angularjs-and-rails-4-api-resources/). In the meantime I made some further experiences I'd like to share.
+Last year I wrote about how you could design an application with [AngularJS and Rails API Resources](/2014/08/13/angularjs-and-rails-4-api-resources/). In the meantime I made some further experiences I'd like to share.
 
 I said that you should design your application with keeping in mind which parts should be consumed by machines and which should be used by humans. This still holds true but needs to be intensified. It's not enough to think about the buzzwords _separation of concern_ and _information expert_. You must enforce it.
 
