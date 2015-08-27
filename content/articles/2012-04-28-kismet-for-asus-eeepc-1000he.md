@@ -10,7 +10,7 @@ categories:
 
 Kismet is a powerful wifi analysis tool. It lists all available wireless networks around your position.
 
-![Kismet Screenshot](http://www.miraculum.ch/wp-content/uploads/Bildschirmfoto-am-2012-04-28-204439-300x175.png)
+![Kismet Screenshot](images/2012/Bildschirmfoto-am-2012-04-28-204439-300x175.png)
 
 But there's one little problem with the installation. The Kismet server needs to know the chipset of you wireless
 card and your user name. Therefore you have to edit the following entries in `/etc/kismet/kismet.conf`:

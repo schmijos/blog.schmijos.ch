@@ -37,7 +37,7 @@ At first I initialize a map where I'm going to count the vocals. I'm initializin
 
 This piece of code works as expected if the last character typed in is a consonant. Otherwise the output looks like this:
 
-![Vocal Count Fail](http://www.miraculum.ch/wp-content/uploads/wrong-console.png)
+![Vocal Count Fail](images/2011/wrong-console.png)
 
 Whats wrong? 
 The point is, that the loop condition is still satisfied when the EOF character shows in. Therefore the last character is shifted twice.
@@ -53,6 +53,6 @@ while (cin >> c) {
 Then the output is correct.
 
 
-![Correct Vocal Count](http://www.miraculum.ch/wp-content/uploads/right-console.png)
+![Correct Vocal Count](images/2011/right-console.png)
 
 Why this weird behavior? There should be thrown an out of bound exception or something like that. Eventually it's some sort of "modern" bug containment for people who use streams carelessly or it is because of the consideration that a stream should be infinite by design.

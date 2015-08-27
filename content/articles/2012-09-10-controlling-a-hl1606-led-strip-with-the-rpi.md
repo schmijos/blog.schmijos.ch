@@ -32,11 +32,11 @@ I have also uploaded the whole Project (Source files, examples and hardware layo
 
 The whole project was a bit more complicated as I anticipated, because these strips are operated on 5V and would not (unlike most IC’s) accept 3,3V as a valid high signal. It took me quite some time to figure this one outJ. So to use the strip I needed to provide level-shifting. Because for this specific application data is only sent and not received by the Pi I used a simple quadruple dual-input AND-Gate that accepts 3,3V as high. It’s connected like this:
 
-[![](http://www.miraculum.ch/wp-content/uploads/Levelshifter.jpg)](http://www.miraculum.ch/wp-content/uploads/Levelshifter.jpg)
+![](images/2012/Levelshifter.jpg)
 
 You could also do this with some transistors, but I think it’s not worth the hassle as these chips only cost a couple of cents, are available everywhere and do the job perfectly and quick.  In the end it looked like this:
 
-[![](http://www.miraculum.ch/wp-content/uploads/HL1606_Aufbau-1024x613.jpg)](http://www.miraculum.ch/wp-content/uploads/HL1606_Aufbau.jpg)
+![](images/2012/HL1606_Aufbau-1024x613.jpg)
 
 Note that i added some LED's to check on the status of the signals and ensure they work corectly
 

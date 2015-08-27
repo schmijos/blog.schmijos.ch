@@ -27,4 +27,4 @@ I played around with Microsoft SQL Server without a result. As seen in the serve
 
 After the SQL Express log files were clean, it still didn't work. After long time searching through the LogViewers messages, I found a warning about accessing the web service _http://Machine:80/Altiris/NS_. There is a problem if you're running your IIS containers with .NET 4.0. The ASP.NET Ajax libraries need to be of version 2.0. Changing the .NET version of the IIS application pool where Altiris is run to .NET 2.0 solved my problems.
 
-[caption id="attachment_427" align="alignleft" width="300"][![Altiris .NET Requirements](http://www.miraculum.ch/wp-content/uploads/Altiris-IIS-Config-300x116.png)](http://www.miraculum.ch/wp-content/uploads/Altiris-IIS-Config.png) Altiris .NET Requirements[/caption]
+![Altiris .NET Requirements](images/2013/Altiris-IIS-Config-300x116.png)

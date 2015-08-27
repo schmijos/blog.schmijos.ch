@@ -31,4 +31,4 @@ sudo apt-get install unity-2d`
 
 Now I'm fueled with fresh 2D power and the system feels really fast :-)
 
-![Console on Unity 2D](http://www.miraculum.ch/wp-content/uploads/unity-2d-300x175.png)
+![Console on Unity 2D](images/2011/unity-2d-300x175.png)
