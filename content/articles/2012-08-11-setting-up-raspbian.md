@@ -21,7 +21,7 @@ Since raspberrypi.org recommended to use Raspbian “wheezy” for beginners I t
   * **Expand rootfs**: By default the image you loaded onto the SD Card is only 1.8GB large. So only this amount of space is used on the card. The rest cannot be used by default. This option expands the File system to the whole card. If you have a 2GB card this will not help you much. But in my case (4Gb) so I now have 2.2GB more space for my files.
 
 	
-  * **Overscan**: If you have problems with a black border around your screen you will have to change these settings. By default I would set it to <Disable>
+  * **Overscan**: If you have problems with a black border around your screen you will have to change these settings. By default I would set it to `<Disable>`
 
 	
   * **Configure_keyboard**: Here you have to set the layout to the one for your country if you happen to not live in the UK
