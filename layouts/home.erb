@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title><%= @item[:title] %></title>
+
+    <link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
+
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <header>
+        <ul>
+          <li><a href="/">Main</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+
+        <h1>SCHMIJOS' BLOG <span>about Programming Stuff</span></h1>
+      </header>
+
+      <section id="content">
+        <%= yield %>
+      </section>
+
+      <aside>
+        <h2>Other Articles</h2>
+        <ul>
+          <% sorted_articles.each do |post| %>
+            <li><%= link_to post[:title], post.path %></li>
+          <% end %>
+        </ul>
+      </aside>
+
+    </div>
+  </body>
+</html>

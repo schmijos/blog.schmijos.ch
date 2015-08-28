@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 time {
   color: #737685;
   font-family: "calluna-sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;

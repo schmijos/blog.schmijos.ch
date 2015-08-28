@@ -17,7 +17,13 @@
 
       <article>
         <header>
-          <h1>SCHMIJOS' BLOG <span>about Programming Stuff</span></h1>
+          <ul>
+            <li><a href="/">Main</a></li>
+            <li><a href="/about/">About</a></li>
+          </ul>
+
+          <h1><%= link_to @item[:title], @item.path %></h1>
+          <time><%= item[:created_at] %></time>
         </header>
 
         <section id="content">
@@ -32,19 +38,12 @@
       </article>
 
       <aside>
-        <div id="sidebar">
-          <h2>Page</h2>
-          <ul>
-            <li><a href="/">Main</a></li>
-            <li><a href="/about/">About</a></li>
-          </ul>
-          <h2>Articles</h2>
-          <ul>
-            <% sorted_articles.each do |post| %>
-              <li><%= link_to post[:title], post.path %></li>
-            <% end %>
-          </ul>
-        </div>
+        <h2>Articles</h2>
+        <ul>
+          <% sorted_articles.each do |post| %>
+            <li><%= link_to post[:title], post.path %></li>
+          <% end %>
+        </ul>
       </aside>
 
     </div>
