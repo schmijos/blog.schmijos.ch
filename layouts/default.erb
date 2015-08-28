@@ -7,25 +7,32 @@
 
     <title><%= @item[:title] %></title>
 
-    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
     <link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
 
-    <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
   </head>
   <body>
+
     <div class="container">
-      <div class="row">
 
-        <div id="main" class="col-md-8">
-          <div>
-            <div>
-              <%= yield %>
-            </div>
-          </div>
-        </div>
+      <article>
+        <header>
+          <h1>SCHMIJOS' BLOG <span>about Programming Stuff</span></h1>
+        </header>
 
-        <div id="sidebar" class="col-md-4">
+        <section id="content">
+          <%= yield %>
+        </section>
+
+        <footer id="footer">
+          <p>
+            This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+          </p>
+        </footer>
+      </article>
+
+      <aside>
+        <div id="sidebar">
           <h2>Page</h2>
           <ul>
             <li><a href="/">Main</a></li>
@@ -38,8 +45,8 @@
             <% end %>
           </ul>
         </div>
+      </aside>
 
-      </div>
     </div>
   </body>
 </html>

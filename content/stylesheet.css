@@ -1,0 +1,17 @@
+body {
+  color: rgba(46, 48, 58, 0.96);
+  font-family: "freight-text-pro", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+a {
+  color: #AD141E;
+  text-decoration: none;
+}
+
+time {
+  color: #737685;
+  font-family: "calluna-sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1.1rem;
+}
