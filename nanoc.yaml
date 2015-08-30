@@ -72,3 +72,9 @@ checks:
     # E.g.:
     #   exclude: ['^/server_status']
     exclude: []
+
+deploy:
+  default:
+    kind: rsync
+    dst:  "schmijos@a.sr5.me:/var/www/vhosts/schmijos.ch/httpdocs"
+    options: [ '-aP', '--delete-after' ]
