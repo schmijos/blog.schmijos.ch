@@ -19,3 +19,15 @@ time {
   font-family: "calluna-sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1.1rem;
 }
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 768px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
