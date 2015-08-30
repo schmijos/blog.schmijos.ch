@@ -26,6 +26,15 @@ img{
   display: block;
 }
 
+pre {
+  background-color: #F1F1F1;
+  padding: 10px;
+}
+
+pre code {
+  letter-spacing: -0.5px;
+}
+
 .container {
   max-width: 768px;
   padding: 0 20px;

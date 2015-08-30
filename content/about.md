@@ -1,5 +1,5 @@
 ---
-title: About schmijos
+title: About Schmijos
 ---
 
 This is me, Josua M. Schmid aka schmijos. I'm a computer enthusiast who organizes lan parties.

@@ -5,7 +5,7 @@ title: "schmijos' blog"
 <% sorted_articles[0, 3].each do |post| %>
   <div class="post-list">
     <h2><%= link_to post[:title], post.path %></h2>
-    <time><%= post[:created_at] %></time>
+    <time datetime="<%= post[:created_at] %>"><%= post[:created_at].strftime('%F') %></time>
     <article>
       <%= post.compiled_content %>
     </article>
