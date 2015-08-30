@@ -59,3 +59,9 @@ header ul li {
 header h1 {
   font-variant: small-caps;
 }
+
+img.avatar {
+  height: 320px; /* prevents flickering on image load */
+  margin: 50px auto;
+  border-radius: 100%;
+}
