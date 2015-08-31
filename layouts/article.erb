@@ -22,7 +22,6 @@
             <li><a href="/about/">About</a></li>
           </ul>
 
-          <hr/>
           <h1><%= link_to @item[:title], @item.path %></h1>
           <time datetime="<%= @item[:created_at] %>"><%= @item[:created_at].strftime('%F') %></time>
         </header>

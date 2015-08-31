@@ -3,11 +3,11 @@ title: "Schmijos' Blog"
 ---
 
 <% sorted_articles[0, 3].each do |post| %>
-  <div class="post-list">
+  <article>
     <h2><%= link_to post[:title], post.path %></h2>
     <time datetime="<%= post[:created_at] %>"><%= post[:created_at].strftime('%F') %></time>
-    <article>
+    <section class="content">
       <%= post.compiled_content %>
-    </article>
-  </div>
+    </section>
+  </article>
 <% end %>

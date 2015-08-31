@@ -41,8 +41,29 @@ pre code {
   margin: 0 auto;
 }
 
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px dotted #DDDDDD;
+}
+
+article + article {
+  border-top: 1px solid #BBBBBB;
+  margin-top: 4em;
+}
+
+article:last-of-type {
+  margin-bottom: 3em;
+}
+
 header {
   margin-bottom: 3em;
+}
+
+header h1 {
+  padding: 0.5em 0;
+  border-top: 1px solid #BBBBBB;
+  border-bottom: 1px solid #BBBBBB;
 }
 
 header ul {
