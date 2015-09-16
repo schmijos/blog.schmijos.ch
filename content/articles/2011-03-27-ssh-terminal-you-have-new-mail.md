@@ -10,9 +10,13 @@ tags:
 - mail
 ---
 
-If I log in to my fileserver per SSH, I get the usual MOTD (message of the day) plus a message
+If I log in to my fileserver per SSH, I get the usual MOTD (message of the day) plus a message 
 saying "You have new mail" ("Sie haben neue Nachrichten"). After some googleing I found out,
-that I had to type in the following to see this "mail": `mail` Very self-explanatory :-P
+that I had to type in the following to see this "mail":
+
+    mail
+
+Very self-explanatory :-P
 Then a console mail client appeared on my desk
 
 ![mail per ssh](/images/2011/ssh-mail.png)
@@ -20,4 +24,4 @@ Then a console mail client appeared on my desk
 You can navigate through your in-box by typing the number of a mail.
   
 By the way: On boot, the server overwrites your MOTD. You can customize this behavior by
-editing _/etc/motd.tail_ and _/etc/init.d/bootmisc.sh_
+editing `/etc/motd.tail` and `/etc/init.d/bootmisc.sh`.
