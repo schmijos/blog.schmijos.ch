@@ -7,7 +7,7 @@ GEM
     cri (2.7.0)
       colored (~> 1.2)
     kramdown (1.10.0)
-    nanoc (4.0.2)
+    nanoc (3.8.0)
       cri (~> 2.3)
     rack (1.6.4)
 
@@ -17,7 +17,7 @@ PLATFORMS
 DEPENDENCIES
   adsf
   kramdown
-  nanoc
+  nanoc (< 4)
 
 BUNDLED WITH
    1.11.2
