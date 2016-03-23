@@ -17,7 +17,7 @@ PLATFORMS
 DEPENDENCIES
   adsf
   kramdown
-  nanoc (~> 4.0.0rc2)
+  nanoc
 
 BUNDLED WITH
    1.11.2

@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.2.2'
+ruby File.read('.ruby-version').strip
 
-gem 'nanoc', '~> 4.0.0rc2'
+gem 'nanoc'
 
 gem 'adsf'
 gem 'kramdown'
