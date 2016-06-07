@@ -12,6 +12,8 @@ If you have an API which you want to protect with an API key you can do
 it the following way in Rails.
 
     class ApplicationController < ActionController::API
+      include ActionController::HttpAuthentication::Token::ControllerMethods
+
       before_action :restrict_access
 
       private
